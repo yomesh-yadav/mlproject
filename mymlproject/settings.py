@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-y^seikux4q*ac8%+ia5(k1&&wxr)k^s2(8qwp6_8gn+eh@3m*h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://music-pop-pred.herokuapp.com/','127.0.0.1','localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

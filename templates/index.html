@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+	background: url(https://images.unsplash.com/photo-1521604784100-e0318b4b2bad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=70) no-repeat center center fixed;
+	background-size:cover;
+	font-size: 16px;
+    opacity: 1;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	margin: 0;
+	color: #666;
+}
+
+.main{
+  display: flex;
+  /* flex-direction: column; */
+  /* position: top; */
+  /* top: 5vh; */
+  background-image: url(https://https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80.unsplash.com/photo-1487147264018-f937fba0c817?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+  background-size:cover;
+  font-family: sans-serif;
+  font-size:20px;
+  
+  border-radius: 8px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  /* height: 310px; */
+  margin:  auto ;
+  width: 25%;
+  
+}
+.main_content{
+  font-family: Brush Script MT ;
+  color : black;
+  font-size: 23px;;
+  font-weight:bold;
+  letter-spacing: 4px;
+  padding-bottom: 23px;
+  padding-top: 13px;
+  text-align: center;
+  /* width: 30%; */
+ 
+
+}
+.content{
+    
+  padding:5px;
+  border-radius: 4px;
+  border: 1px solid black;
+  width: 70%;
+  font-size: 10px;
+  text-align: center;
+  
+}
+.content-button{
+  width: 60%;
+  background-color: antiquewhite;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 5px;
+
+}
+.content2{
+    display: flex;
+    /* flex-direction: row;
+     */
+     
+     justify-content:center;
+     flex-wrap: wrap;
+    }
+.newp{
+    display: flex;
+    justify-content: center;
+}
+    </style>
+</head>
+<body>
+    <div class="newp">
+
+        <h1 font ="black" class="newm">Predicted value is {{ pred_value }}</h1>
+    </div>
+    <div class="main">
+        <div class="main_content">
+            <form action="/predict" method="post">
+                {% csrf_token %}
+                <div class="content2">
+                    
+                    <label for="acousticness">acousticness range(0,1)</label> 
+                    <br>
+                    <input type="text" name="acousticness" class="content">
+                    <br>
+                     <label for="danceability">danceability range(0,1)</label> 
+                    <br>
+                    <input type="text" name="danceability" class="content">
+                    <br>
+                    <label for="energy">energy range(0,1)</label> 
+                    <br>
+                    <input type="text" name="energy" class="content">
+                    <br>
+                    <label for="explicit">explicit cat[0,1]</label> 
+                    <br>
+                    <input type="text" name="explicit" class="content">
+                    <br>
+                    <label for="instrumentalness">instrumentalness range(0,1)</label> 
+                    <br>
+                    <input type="text" name="instrumentalness" class="content">
+                    <br>
+                    <label for="liveness">liveness range(0,1)</label> 
+                    <br>
+                    <input type="text" name="liveness" class="content">
+                    <br>
+                    <label for="loudness">loudness range(-50,1)</label> 
+                    <br>
+                    <input type="text" name="loudness" class="content">
+                    <br>
+                    <label for="mode">mode cat[0,1]</label> 
+                    <br>
+                    <input type="text" name="mode" class="content">
+                    <br>
+                    <label for="speechiness">speechiness range(0,1)</label> 
+                    <br>
+                    <input type="text" name="speechiness" class="content">
+                    <br>
+                    <label for="loudness">tempo range(0,220)</label>
+                    <br>
+                    <input type="text" name="tempo" class="content">
+                    <br>
+                    <label for="valence">valence range(0,1)</label>
+                    <br>
+                    <input type="text" name="valence" class="content">
+                    <br>
+                    <label for="year">launch year</label>
+                    <br>
+                    <input type="text" name="year" class="content">
+                    <br>
+                    <label for="month">launch month</label>
+                    <br>
+                    <input type="text" name="month" class="content">
+                    <br>
+                   
+                    <button type="submit" class="content-button"> submit</button>
+                    <br>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

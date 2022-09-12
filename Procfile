@@ -1,1 +1,1 @@
-web: gunicorn webpro.wsgi
+web: gunicorn mymlproject.wsgi

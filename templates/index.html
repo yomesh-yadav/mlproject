@@ -36,7 +36,7 @@
   
 }
 .main_content{
-  font-family: Brush Script MT ;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
   color : black;
   font-size: 23px;;
   font-weight:bold;
@@ -64,6 +64,7 @@
   border: 1px solid black;
   border-radius: 4px;
   padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
 
 }
 .content2{
@@ -91,55 +92,55 @@
                 {% csrf_token %}
                 <div class="content2">
                     
-                    <label for="acousticness">acousticness range(0,1)</label> 
+                    <label for="acousticness">Acousticness range(0,1)</label> 
                     <br>
                     <input type="text" name="acousticness" class="content">
                     <br>
-                     <label for="danceability">danceability range(0,1)</label> 
+                     <label for="danceability">Danceability range(0,1)</label> 
                     <br>
                     <input type="text" name="danceability" class="content">
                     <br>
-                    <label for="energy">energy range(0,1)</label> 
+                    <label for="energy">Energy range(0,1)</label> 
                     <br>
                     <input type="text" name="energy" class="content">
                     <br>
-                    <label for="explicit">explicit cat[0,1]</label> 
+                    <label for="explicit">Explicit cat[0,1]</label> 
                     <br>
                     <input type="text" name="explicit" class="content">
                     <br>
-                    <label for="instrumentalness">instrumentalness range(0,1)</label> 
+                    <label for="instrumentalness">Instrumentalness range(0,1)</label> 
                     <br>
                     <input type="text" name="instrumentalness" class="content">
                     <br>
-                    <label for="liveness">liveness range(0,1)</label> 
+                    <label for="liveness">Liveness range(0,1)</label> 
                     <br>
                     <input type="text" name="liveness" class="content">
                     <br>
-                    <label for="loudness">loudness range(-50,1)</label> 
+                    <label for="loudness">Loudness range(-50,1)</label> 
                     <br>
                     <input type="text" name="loudness" class="content">
                     <br>
-                    <label for="mode">mode cat[0,1]</label> 
+                    <label for="mode">Mode cat[0,1]</label> 
                     <br>
                     <input type="text" name="mode" class="content">
                     <br>
-                    <label for="speechiness">speechiness range(0,1)</label> 
+                    <label for="speechiness">Speechiness range(0,1)</label> 
                     <br>
                     <input type="text" name="speechiness" class="content">
                     <br>
-                    <label for="loudness">tempo range(0,220)</label>
+                    <label for="loudness">Tempo range(0,220)</label>
                     <br>
                     <input type="text" name="tempo" class="content">
                     <br>
-                    <label for="valence">valence range(0,1)</label>
+                    <label for="valence">Valence range(0,1)</label>
                     <br>
                     <input type="text" name="valence" class="content">
                     <br>
-                    <label for="year">launch year</label>
+                    <label for="year">Launch year</label>
                     <br>
                     <input type="text" name="year" class="content">
                     <br>
-                    <label for="month">launch month</label>
+                    <label for="month">Launch month</label>
                     <br>
                     <input type="text" name="month" class="content">
                     <br>

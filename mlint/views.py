@@ -53,7 +53,7 @@ def month_bin_func(element):
 # year_binner=pickle.load(open('year_bin_func.pkl','rb'))
 
 def home(request):
-    
+    return HTTPResponse("works")
     return render(request,"index.html")
 
 def predict(request):
